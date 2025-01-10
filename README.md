@@ -1,50 +1,44 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém a resolução de vários problemas usando React e TypeScript. Cada problema está implementado em um componente separado e estilizado usando Tailwind CSS.
 
-Currently, two official plugins are available:
+## Estrutura do Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+/src /components /Problema1.tsx /Problema2.tsx /Problema3.tsx /Problema4.tsx /Problema5.tsx /App.tsx /index.tsx /index.css /tailwind.config.js /postcss.config.cjs /package.json /tsconfig.json /vite.config.ts
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Como Executar o Projeto
 
-- Configure the top-level `parserOptions` property like this:
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio
+Instale as dependências:
+   ```bash
+npm install
+   ```
+Execute o projeto:
+   ```bash
+npm run dev
+   ```
+Componentes
+Problema 1
+Calcula a soma de números de 1 a 13.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Problema 2
+Verifica se um número pertence à sequência de Fibonacci.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Problema 3
+Calcula o menor, maior faturamento e dias acima da média de um vetor de faturamento diário.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Problema 4
+Calcula o percentual de representação de faturamento por estado.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Problema 5
+Inverte os caracteres de uma string.
+
+Tecnologias Utilizadas
+React
+TypeScript
+Tailwind CSS
+Vite
